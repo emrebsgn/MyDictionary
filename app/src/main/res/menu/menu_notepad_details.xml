@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/note_delete" android:title="Sil"></item>
+    <item android:id="@+id/note_save_changes" android:title="Değişiklikleri Kaydet"></item>
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/translateback"
+    android:persistentDrawingCache="scrolling"
+    tools:context=".StoriesActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="356sp"
+        android:layout_height="208dp"
+        android:background="#C2EFE8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007">
+
+        <TextView
+            android:id="@+id/storyEnglish"
+            android:layout_width="356sp"
+            android:layout_height="208dp"
+            android:hint="The little sisters went into the room to play at the ball. “We must be careful not to wake the white cat,” the tall one said, softly.“Or to spoil the roses,” the fat one whispered;   “But throw high dear sister, or we shall never hit the ceiling.”  “You dear children,” thought the white cat,  “Why do you come to play here at all? Only just round the corner are the shady trees, and the birds singing on the branches, and the sunshine is flecking the pathway. Who knows but what, out there, your ball might touch the sky? Here you will only disturb me, and perhaps spoil the roses, and at best you can but hit the ceiling!”"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="356sp"
+        android:layout_height="208dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="160dp"
+        android:background="#D58383"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+
+        <TextView
+            android:id="@+id/storyTurkish"
+            android:layout_width="356sp"
+            android:layout_height="208dp"
+            android:hint=" Küçük kız kardeşler top oynamak için odaya girdiler.  “Beyaz kediyi uyandırmamaya dikkat etmeliyiz,” dedi uzun boylu olan usulca.  “Ya da gülleri mahvetmemeye” diye fısıldadı şişman olan;  “Ama yükseğe fırlat, sevgili kız kardeşim, yoksa asla tavana vuramayacağız.”  “Siz sevgili çocuklar” diye düşündü beyaz kedi,  “Neden buraya oynamaya gelirsiniz? Gölgeli ağaçlar, dallarda şarkı söyleyen kuşlar sadece köşeyi dönünce ve güneş ışığı patikayı bürüyor. Kim bilir ama, dışarıda, topunuz gökyüzüne dokunabilir mi? Burada sadece beni rahatsız edeceksiniz ve belki de gülleri mahvedeceksiniz ve yapabileceğinizin en iyisi tavana vurmak!” Türkçesi – Kız Kardeşler  Küçük kız kardeşler top oynamak için odaya girdiler.  “Beyaz kediyi uyandırmamaya dikkat etmeliyiz,” dedi uzun boylu olan usulca.  “Ya da gülleri mahvetmemeye” diye fısıldadı şişman olan;  “Ama yükseğe fırlat, sevgili kız kardeşim, yoksa asla tavana vuramayacağız.”  “Siz sevgili çocuklar” diye düşündü beyaz kedi,  “Neden buraya oynamaya gelirsiniz? Gölgeli ağaçlar, dallarda şarkı söyleyen kuşlar sadece köşeyi dönünce ve güneş ışığı patikayı bürüyor. Kim bilir ama, dışarıda, topunuz gökyüzüne dokunabilir mi? Burada sadece beni rahatsız edeceksiniz ve belki de gülleri mahvedeceksiniz ve yapabileceğinizin en iyisi tavana vurmak!”"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btnLeftDialog"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:onClick="clickLeftStory"
+        android:rotation="-180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/titleStoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="38dp"
+        android:hint="Kız Kardeşler"
+        android:textAlignment="center"
+        android:textColor="#A8A2A2"
+        android:textColorHint="#A8A2A2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRightDialog"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toEndOf="@+id/btnLeftDialog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <ImageView
+        android:id="@+id/btnRightDialog"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:onClick="clickRightStory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="58dp"
+        android:background="#B6B8B8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickDictionary"
+            app:srcCompat="@drawable/dictionary" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="clickTranslate"
+            app:srcCompat="@drawable/translate" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="clickMain"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="clickEducation"
+            app:srcCompat="@drawable/bookss" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profil" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
